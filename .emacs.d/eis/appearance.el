@@ -1,7 +1,14 @@
 ;; Appearance configuration
 
 ;; Font
-(set-face-attribute 'default nil :font "Consolas-12")
+(cond
+    ((string-equal system-type "gnu/linux")
+        (set-face-attribute 'default nil :font "Monospace-10"))
+    ((string-equal system-type "darwin")
+        (set-face-attribute 'default nil :font "Monaco-12"))
+    ((string-equal system-type "windows-nt")
+        (set-face-attribute 'default nil :font "Consolas-12")))
+
 (global-linum-mode t)
 
 ;; Colors
