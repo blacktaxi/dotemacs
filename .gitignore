@@ -2,3 +2,6 @@
 /.emacs.d/backups/
 /.emacs.d/url/
 /.emacs.d/places
+/.emacs.d/elpa/archives/
+.smex-items
+*.elc
